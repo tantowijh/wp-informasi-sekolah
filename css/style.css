@@ -1,0 +1,262 @@
+/* .hero img {
+    min-width: 100%;
+    max-height: 95vh;
+} */
+.hero div {
+    max-height: 70vh;
+}
+
+:root {
+    /* CSS HSL */
+    --dark-moss-green: hsla(74, 32%, 32%, 1);
+    --pakistan-green: hsla(88, 38%, 15%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+    --earth-yellow: hsla(32, 65%, 62%, 1);
+    --tigers-eye: hsla(28, 67%, 44%, 1);
+}
+
+.btn-zuledu {
+    color: #fff !important;
+    background-color: var(--earth-yellow) !important;
+    border-color: var(--earth-yellow) !important;
+}
+
+.btn-zuledu:hover {
+    color: #fff !important;
+    background-color: var(--tigers-eye) !important;
+    border-color: var(--tigers-eye) !important;
+}
+
+.btn-zuledu:active,
+.btn-zuledu.focus {
+    color: #fff !important;
+    background-color: var(--earth-yellow) !important;
+    border-color: var(--earth-yellow) !important;
+}
+
+.btn-cari-color {
+    --bs-btn-color: var(--dark-moss-green) !important;
+    --bs-btn-border-color: var(--dark-moss-green) !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--dark-moss-green) !important;
+    --bs-btn-hover-border-color: var(--dark-moss-green) !important;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--pakistan-green) !important;
+    --bs-btn-active-border-color: var(--pakistan-green) !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--dark-moss-green) !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--dark-moss-green) !important;
+    --bs-gradient: none;
+}
+
+.zuledu-main-color {
+    color: var(--pakistan-green);
+    background-color: var(--cornsilk);
+}
+
+.zuledu-secondary-color {
+    color: var(--cornsilk) !important;
+    background-color: var(--dark-moss-green) !important;
+}
+
+.zuledu-secondary-color li a,
+.zuledu-secondary-color li::before {
+    color: var(--cornsilk) !important;
+}
+
+.zuledu-secondary-color li a:hover,
+.zuledu-secondary-color li a:focus {
+    color: var(--earth-yellow) !important;
+}
+
+.content-color {
+    color: var(--pakistan-green);
+}
+
+.h1-zuledu {
+    font-size: 1.4rem;
+}
+
+.lead-zuledu {
+    font-size: 1rem;
+}
+
+/* Header Section */
+a.navbar-brand img {
+    max-width: 180px;
+    transition: max-width 0.3s ease;
+}
+
+@media (max-width: 360px) {
+    a.navbar-brand img {
+        max-width: 130px;
+    }
+}
+
+.nav-link,
+.dropdown-item {
+    color: var(--pakistan-green) !important;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    color: var(--earth-yellow) !important;
+}
+
+.nav-link.active,
+.dropdown-item.active {
+    color: var(--tigers-eye) !important;
+}
+
+.dropdown-item:active {
+    color: var(--earth-yellow) !important;
+    background-color: var(--pakistan-green) !important;
+}
+
+i.fa-solid.fa-2xl {
+    color: var(--earth-yellow);
+}
+
+header nav.nav-color {
+    background-color: var(--cornsilk) !important;
+}
+
+/* Hero Section */
+.hero h1,
+.hero p {
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+.min-btn {
+    display: none !important;
+}
+
+@media (min-width: 560px) {
+    .hero .carousel-caption {
+        margin-bottom: 3%;
+    }
+
+    .min-btn {
+        display: inline !important;
+    }
+}
+
+.misi-sekolah {
+    background-color: var(--cornsilk);
+}
+
+.zuledu-overlay {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Footer Section */
+.zuledu-footer-container {
+    position: absolute;
+    width: 100%;
+    padding-top: 2px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+footer a img {
+    max-width: 150px;
+    transition: max-width 0.5s ease-in-out;
+}
+
+@media (max-width: 770px) {
+    footer a img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 530px) {
+    footer p {
+        text-align: center;
+    }
+
+    div.container .d-flex {
+        display: grid !important;
+        justify-content: center !important;
+    }
+}
+
+.zd-main-opacity {
+    background-color: hsla(52, 94%, 94%, .3);
+}
+
+
+/* Team Section
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
