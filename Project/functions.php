@@ -28,10 +28,12 @@ function subTitle()
         return 'ZulEdu';
     }
 }
-function navLink($pageName)
+function navLink($pageName, string $link = '')
 {
     if (basename($_SERVER['PHP_SELF']) === $pageName) {
         return '#';
+    } elseif (basename($_SERVER['PHP_SELF']) === "index.php" && $pageName === "/") {
+        return "#";
     } else {
         return $pageName;
     }

@@ -1,6 +1,11 @@
 <?php
     require('header.php');
     include('breadcrumb.php');
+?>
+
+<div class="container">
+
+<?php
 if (isset($_POST['search'])) {
     $searchTerm = $_POST['search'];
 
@@ -31,5 +36,10 @@ if (isset($_POST['search'])) {
         echo "No results found.";
     }
 }
+?>
+
+</div>
+
+<?php
 require('footer.php');
 ?>
