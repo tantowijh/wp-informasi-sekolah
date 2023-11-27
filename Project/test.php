@@ -1,42 +1,69 @@
 <?php require('header.php'); ?>
 
 
-<section class="prestasi py-5">
-  <div class="container text-center">
-    <h1 class="text-uppercase">OUR SCHOOL BY THE NUMBERS</h1>
-    <div class="row justify-content-center z-icon">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3">
-        <div class="item p-4 rounded text-center">
-          <i class="fa-solid fa-trophy"></i>
-          <p class="mt-3">88%</p>
-          <span>Participate in Extracurriculars</span>
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+        <img src="images/group-people-volunteering-foodbank-poor-people.jpg" class="custom-text-box-image img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-6 col-12">
+        <div class="custom-text-box" style="background-color: var(--primary-color);">
+          <h2 class="mb-2">Our Story</h2>
+
+          <h5 class="mb-3">About ZulEdu</h5>
+
+          <p class="mb-0">We create, teach, and learn together across three garden-like campuses with leading-edge facilities that support independent inquiry, critical thinking, problem-solving, and collaborative study. We play sports, put on drama productions, paint, sculpt, engineer, and create. Our students are able to explore and grow in a safe environment and are encouraged to follow their passions to be as successful as they can be.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="custom-text-box mb-lg-0" style="background-color: var(--primary-color);">
+              <h5 class="mb-3">Our Mission</h5>
+
+              <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+              <ul class="custom-list mt-2">
+                <li class="custom-list-item d-flex">
+                  <i class="fa-solid fa-check custom-text-box-icon me-2"></i>
+                  Charity Theme
+                </li>
+
+                <li class="custom-list-item d-flex">
+                  <i class="fa-solid fa-check custom-text-box-icon me-2"></i>
+                  Semantic HTML
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="custom-text-box mb-lg-0" style="background-color: var(--primary-color);">
+              <h5 class="mb-3">Our Mission</h5>
+
+              <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+              <ul class="custom-list mt-2">
+                <li class="custom-list-item d-flex">
+                  <i class="fa-solid fa-check custom-text-box-icon me-2"></i>
+                  Charity Theme
+                </li>
+
+                <li class="custom-list-item d-flex">
+                  <i class="fa-solid fa-check custom-text-box-icon me-2"></i>
+                  Semantic HTML
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3">
-        <div class="item p-4 rounded text-center">
-          <i class="fa-solid fa-user-graduate"></i>
-          <p class="mt-3">97%</p>
-          <span>Graduation Rate</span>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3">
-        <div class="item p-4 rounded text-center">
-          <i class="fa-solid fa-building-columns"></i>
-          <p class="mt-3">90%</p>
-          <span>Students Continuing their Education</span>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3">
-        <div class="item p-4 rounded text-center">
-          <i class="fa-solid fa-chalkboard-user"></i>
-          <p class="mt-3">100%</p>
-          <span>Certification - Student Services</span>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
-
 
 
 
