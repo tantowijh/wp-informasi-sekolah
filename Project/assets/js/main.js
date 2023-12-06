@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var navbar = document.querySelector('.zul-nav-scroll');
     var prevScrollpos = window.scrollY;
 
@@ -11,4 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         prevScrollpos = currentScrollPos;
     });
+
+
+    var currentPageUrl = window.location.href;
+    var footer = document.querySelector('.zuledu-footer-container');
+    // Apakah url saat ini mengandung "search.php"
+    if (currentPageUrl.indexOf('search.php') !== -1) {
+        footer.classList.add('fixed-bottom');
+    }
 });
