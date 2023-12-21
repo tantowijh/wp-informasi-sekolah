@@ -3,7 +3,7 @@ require('header.php');
 include('breadcrumb.php');
 ?>
 
-<div class="container pb-4">
+<div class="container pb-4 zuledu-search">
 
     <?php
     if (isset($_POST['search'])) {

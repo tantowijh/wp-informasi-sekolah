@@ -23,7 +23,7 @@
             <div class="custom-text-box mb-lg-0" style="background-color: var(--primary-color);">
               <h5 class="mb-3">Our Mission</h5>
 
-              <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+              <p>We are passionate, inquisitive and creative – learning in Indonesia to be best for the world. </p>
 
               <ul class="custom-list mt-2">
                 <li class="custom-list-item d-flex">
@@ -43,7 +43,7 @@
             <div class="custom-text-box mb-lg-0" style="background-color: var(--primary-color);">
               <h5 class="mb-3">Our Mission</h5>
 
-              <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+              <p>We will inspire joyful, rigorous learning and foster wellness as a pioneering, inclusive, and collaborative community. </p>
 
               <ul class="custom-list mt-2">
                 <li class="custom-list-item d-flex">

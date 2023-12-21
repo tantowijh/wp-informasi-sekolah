@@ -18,7 +18,7 @@ require('header.php');
                         <div class="carousel-caption text-start">
                             <h1>ZulEdu.</h1>
                             <p class="opacity-75">Zone for Unparalleled Learning Education.</p>
-                            <p><a class="btn min-btn btn-zuledu" href="#" role="button">Start Learning</a></p>
+                            <p><a class="btn min-btn btn-zuledu" id="startReading-Button" href="#start-reading" role="button">View More</a></p>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ require('header.php');
                         <div class="carousel-caption">
                             <h1>Empower Growth</h1>
                             <p>We provide the insight and knowledge you need to succeed.</p>
-                            <p><a class="btn min-btn btn-zuledu" href="#" role="button">View Gallery</a></p>
+                            <p><a class="btn min-btn btn-zuledu" href="galleries.php" role="button">View Gallery</a></p>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ require('header.php');
                         <div class="carousel-caption text-end">
                             <h1>Enhance Your Learning</h1>
                             <p>Your educational progress starts here. Join ZulEdu.</p>
-                            <p><a class="btn min-btn btn-zuledu" id="startReading-Button" href="#start-reading" role="button">View More</a></p>
+                            <p><a class="btn min-btn btn-zuledu" href="admission.php" role="button">Start Learning</a></p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ require('header.php');
             <div class="row text-start row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('https://media.istockphoto.com/id/1047570732/vector/english.jpg?s=612x612&w=0&k=20&c=zgafUJxCytevU-ZRlrZlTEpw3mLlS_HQTIOHLjaSPPM=');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/departments/english.jpg');">
                             <i class="fa-solid fa-language fa-4x"></i>
                             <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                 English Department
@@ -128,7 +128,7 @@ require('header.php');
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('https://img.freepik.com/free-vector/math-background_23-2148146269.jpg?w=360');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/departments/math.jpg');">
                             <i class="fa-solid fa-square-root-variable fa-4x"></i>
                             <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                 Mathematics Department
@@ -139,7 +139,7 @@ require('header.php');
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('https://cdn3.vectorstock.com/i/1000x1000/95/22/science-background-research-outline-icons-vector-26539522.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/departments/science.jpg');">
                             <i class="fa-solid fa-flask fa-4x"></i>
                             <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                 Science Department
@@ -150,7 +150,7 @@ require('header.php');
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202209/MIT_Weak-Ties-01-PRESS_0.jpg?itok=WI9LkFVZ');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/departments/social-study.jpg');">
                             <i class="fa-solid fa-globe fa-4x"></i>
                             <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                 Social Studies Department
@@ -161,7 +161,7 @@ require('header.php');
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('https://static.vecteezy.com/system/resources/previews/002/512/050/original/illustration-of-fitness-girls-performing-sports-exercises-on-a-pink-background-vector.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/departments/physical-edu.jpg');">
                             <i class="fa-solid fa-person-walking fa-4x"></i>
                             <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                 Physical Education Department
@@ -172,7 +172,7 @@ require('header.php');
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/028/624/866/small/abstract-graffiti-art-background-generative-ai-photo.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/departments/extracurricular.jpg');">
                             <i class="fa-solid fa-palette fa-4x"></i>
                             <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                 Extracurricular Activities
