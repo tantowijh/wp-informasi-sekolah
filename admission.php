@@ -16,11 +16,6 @@ require('header.php');
                     Is it a challenging, rigorous and internationally recognized curriculum? Opportunities to engage in sports, creative arts and community service? Supported learning in an environment that embraces diversity? Or perhaps it is something else that’s unique to your particular situation.
                 </p>
 
-
-                <?php
-                require('province.php');
-                ?>
-
                 <form id="custom-message" class="row g-3 pt-5" action="registered.php" onsubmit="return submitForm()" method="POST">
                     <h2>Registration: </h2>
                     <div class="col-md-6">

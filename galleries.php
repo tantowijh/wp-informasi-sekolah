@@ -17,7 +17,7 @@ include('breadcrumb.php');
 
                 // Iterate through the images and create gallery items
                 foreach ($images as $index => $image) {
-                    echo '<div class="col-3 gallery-item">';
+                    echo '<div class="gallery-item">';
                     echo '<a data-fancybox="gallery" data-src="' . $image . '">';
                     echo '<img src="' . $image . '" alt="Image ' . ($index + 1) . '">';
                     echo '</a>';

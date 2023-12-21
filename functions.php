@@ -20,10 +20,14 @@ function subTitle()
 {
     if (basename($_SERVER['PHP_SELF']) === "index.php") {
         return 'ZulEdu - High School';
-    } elseif (basename($_SERVER['PHP_SELF']) == "zuledu.php") {
+    } elseif (basename($_SERVER['PHP_SELF']) == "about.php") {
         return 'ZulEdu - Tentang Kami';
-    } elseif (basename($_SERVER['PHP_SELF']) === "gallery.php") {
+    } elseif (basename($_SERVER['PHP_SELF']) === "galleries.php") {
         return 'ZulEdu - Gallery';
+    } elseif (basename($_SERVER['PHP_SELF']) === "admission.php") {
+        return 'ZulEdu - Pendaftaran';
+    } elseif (basename($_SERVER['PHP_SELF']) === "academics.php") {
+        return 'ZulEdu - Akademik';
     } else {
         return 'ZulEdu';
     }
@@ -47,4 +51,27 @@ function footerItem($pageName, $itemName) {
     . '" class="nav-link px-2 text-body-secondary ' . isActiveLink($pageName) 
     . '" ' . isCurrentPage($pageName) . '>' . $itemName . '</a></li>';
 }
+?>
+
+<?php
+$provinsi_per_region = array(
+    'Sumatra' => array(
+        'Aceh', 'Sumatera Utara', 'Sumatera Barat', 'Riau', 'Kepulauan Riau', 'Jambi', 'Sumatera Selatan', 'Bangka Belitung', 'Bengkulu', 'Lampung'
+    ),
+    'Java' => array(
+        'DKI Jakarta', 'Jawa Barat', 'Banten', 'Jawa Tengah', 'DI Yogyakarta', 'Jawa Timur'
+    ),
+    'Bali & Nusa Tenggara' => array(
+        'Bali', 'Nusa Tenggara Barat', 'Nusa Tenggara Timur'
+    ),
+    'Kalimantan' => array(
+        'Kalimantan Barat', 'Kalimantan Tengah', 'Kalimantan Selatan', 'Kalimantan Timur', 'Kalimantan Utara'
+    ),
+    'Sulawesi' => array(
+        'Gorontalo', 'Sulawesi Utara', 'Sulawesi Tengah', 'Sulawesi Selatan', 'Sulawesi Tenggara', 'Sulawesi Barat'
+    ),
+    'Maluku & Papua' => array(
+        'Maluku', 'Maluku Utara', 'Papua Barat', 'Papua'
+    )
+);
 ?>
