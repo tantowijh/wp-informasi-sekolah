@@ -27,7 +27,6 @@ include('breadcrumb.php');
             </div>
         </div>
     </div>
-    </div>
 </main>
 
 <?php require('footer.php'); ?>
