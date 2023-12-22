@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
         prevScrollpos = currentScrollPos;
     });
 
-
     $(document).ready(function () {
 
         if(window.location.pathname.indexOf("galleries.php") !== -1) {

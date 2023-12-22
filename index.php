@@ -225,6 +225,17 @@ require('header.php');
                             'Zc3iFsYr-AE',
                             'c26g7Eaz1Vc',
                         );
+
+                        if($videoIds) {
+                            echo '<div><p>';
+                            foreach($videoIds as $videoId) {
+                                echo '<a href="https://www.youtube.com/watch?v=' . $videoId . '" data-fancybox="video-gallery"><img alt="" width="200" src="https://i3.ytimg.com/vi/' . $videoId . '/hqdefault.jpg"></a>';
+                            }
+                            echo '</p></div>';
+                        } else {
+                            echo '<div>><p>There are no videos to display.</p></div>';
+                        }
+
                     ?>
                     <div>
                         <p>
@@ -233,12 +244,8 @@ require('header.php');
                             <a href="https://www.youtube.com/watch?v=UFHscDioNWQ" data-fancybox="video-gallery"><img alt="" width="200" src="https://i3.ytimg.com/vi/UFHscDioNWQ/hqdefault.jpg"></a>
                         </p>
                     </div>
-                    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-                    <script>
-                        Fancybox.bind('[data-fancybox="video-gallery"]', {
-                            // Custom options
-                        });
-                    </script>
+                    <script src="assets/js/fancybox.umd.js"></script>
+                    <script src="assets/js/custom.videoku.js"></script>
                 </div>
             </div>
         </div>
