@@ -225,26 +225,20 @@ require('header.php');
                             'Zc3iFsYr-AE',
                             'c26g7Eaz1Vc',
                         );
-
-                        // Iterate through the video IDs and create video embeds
-                        foreach ($videoIds as $index => $videoId) {
-                            echo '<div class="gallery-item">';
-                            echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $videoId . '" frameborder="0" allowfullscreen></iframe>';
-                            echo '</div>';
-                        }
                     ?>
-                    <a href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox="video-gallery">
-                    <img src="thumbnail-a.jpeg" />
-                    </a>
-
-                    <a href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox="video-gallery">
-                    <img src="thumbnail-b.jpeg" />
-                    </a>
-
-                    <a href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox="video-gallery">
-                    <img src="thumbnail-c.jpeg" />
-                    </a>
-
+                    <div>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=tHnwV5ay8-8" data-fancybox="video-gallery"><img alt="" width="200" src="https://i3.ytimg.com/vi/tHnwV5ay8-8/hqdefault.jpg"></a>
+                            <a href="https://www.youtube.com/watch?v=QLQ3sLSrfwI" data-fancybox="video-gallery"><img alt="" width="200" src="https://i3.ytimg.com/vi/QLQ3sLSrfwI/hqdefault.jpg"></a>
+                            <a href="https://www.youtube.com/watch?v=UFHscDioNWQ" data-fancybox="video-gallery"><img alt="" width="200" src="https://i3.ytimg.com/vi/UFHscDioNWQ/hqdefault.jpg"></a>
+                        </p>
+                    </div>
+                    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+                    <script>
+                        Fancybox.bind('[data-fancybox="video-gallery"]', {
+                            // Custom options
+                        });
+                    </script>
                 </div>
             </div>
         </div>
