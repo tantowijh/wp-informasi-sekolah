@@ -13,12 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     $(document).ready(function () {
-
-        if(window.location.pathname.indexOf("galleries.php") !== -1) {
-            Fancybox.bind('[data-fancybox="gallery"]', {
-                //
-            });
-        }
         
         if (window.location.pathname.indexOf("admission.php") !== -1) {
 
@@ -86,3 +80,15 @@ function validateInput(input, message) {
 function clearCustomValidity(input) {
     input.setCustomValidity("");
 }
+
+function fakeEmail() {
+    var name = document.getElementById("name").value;
+    var formMessage = document.getElementById("form-message");
+    formMessage.innerHTML = "<p class='text-center text-success'>Thank you for contacting us, " + name + "!</p>";
+}
+
+$(document).ready(function () {
+    Fancybox.bind('[data-fancybox]', {
+        // Custom options
+    });
+});

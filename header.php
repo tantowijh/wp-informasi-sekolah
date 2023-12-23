@@ -12,8 +12,8 @@ require('functions.php');
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fancybox.css" />
     <script src="assets/js/048de552e6.js" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@ require('functions.php');
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color border-bottom">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="<?php echo navLink('/'); ?>">
+                    <a class="navbar-brand" href="<?php echo navLink('.'); ?>">
                         <svg><use href="#zuledu"></use></svg>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

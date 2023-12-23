@@ -92,7 +92,9 @@ require('header.php');
             </svg>
             <div class="cta-container">
                 <span class="admission-cta-text"> APPLY TO</span>
-                <svg><use href="#zuledu-center"></use></svg>
+                <svg>
+                    <use href="#zuledu-center"></use>
+                </svg>
                 <span class="admission-cta-text"> TODAY</span>
                 <div>
                     <a href="admission.php">
@@ -101,7 +103,7 @@ require('header.php');
                     <a href="contact.php">
                         <button class="zuledu-cta-btn" type="button">Contact Us</button>
                     </a>
-                </div>                    
+                </div>
             </div>
         </div>
     </section>
@@ -224,28 +226,26 @@ require('header.php');
                 <div class="col-md-12 gallery-container">
                     <p>
                         <?php
-                            // Array of YouTube video IDs
-                            $videoIds = array(
-                                '9YuO6np8Ma8',
-                                'Zc3iFsYr-AE',
-                                '4Ba_qTPA4Ds',
-                                'NPLeuBXoPXI',
-                            );
+                        $vidURLs = array(
+                            'https://www.youtube.com/watch?v=9YuO6np8Ma8',
+                            'https://www.youtube.com/watch?v=Zc3iFsYr-AE',
+                            'https://www.youtube.com/watch?v=4Ba_qTPA4Ds',
+                            'https://www.youtube.com/watch?v=NPLeuBXoPXI',
+                        );
 
-                            if($videoIds) {
-                                foreach($videoIds as $videoId) {
-                                    echo '<div class="gallery-item">';
-                                    echo '<a href="https://www.youtube.com/watch?v=' . $videoId . '" data-fancybox="video-gallery">';
-                                    echo '<img alt="" width="200" src="https://i3.ytimg.com/vi/' . $videoId . '/hqdefault.jpg">';
-                                    echo '</a>';
-                                    echo '</div>';
-                                }
-                                echo '<script src="assets/js/fancybox.umd.js"></script>';
-                                echo '<script src="assets/js/custom.videoku.js"></script>';
-                            } else {
-                                echo '<div><p>There are no videos to display.</p></div>';
+                        if ($vidURLs) {
+                            foreach ($vidURLs as $vidURL) {
+                                preg_match_all('/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/', $vidURL, $matches);
+                                $vidID = $matches[1][0];
+                                echo '<div class="gallery-item">';
+                                echo '<a href="https://www.youtube.com/watch?v=' . $vidID . '" data-fancybox="video-gallery">';
+                                echo '<img alt="" width="200" src="https://i3.ytimg.com/vi/' . $vidID . '/hqdefault.jpg">';
+                                echo '</a>';
+                                echo '</div>';
                             }
-
+                        } else {
+                            echo '<div><p>There are no videos to display.</p></div>';
+                        }
                         ?>
                     </p>
                 </div>

@@ -6,8 +6,13 @@ include('breadcrumb.php');
 <main>
     <div class="container">
         <div class="row">
-            <h1 class="pb-2 text-uppercase text-center border-bottom">ZulEdu Gallery</h1>
-            <div class="col-md-12 gallery-container">
+            <div class="col-md-12 my-2">
+                <h1 class="pb-2 text-uppercase text-center border-bottom">ZulEdu Gallery</h1>
+                <p class="text-center">
+                    Explore the wonders of learning through our educational galleries, where each image tells a story of discovery and enlightenment.
+                </p>
+            </div>
+            <div class="col-md-12 mb-5 gallery-container">
                 <?php
                 // Directory path to the folder containing images
                 $image_folder = 'assets/img/galleries';
