@@ -243,6 +243,7 @@ require('header.php');
                                 echo '</a>';
                                 echo '</div>';
                             }
+                            echo '<script src="assets/js/fancybox.umd.js"></script>';
                         } else {
                             echo '<div><p>There are no videos to display.</p></div>';
                         }
