@@ -8,12 +8,13 @@ require('functions.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo subTitle(); ?></title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fancybox.css" />
-    <script src="assets/js/048de552e6.js" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/zuledu.ico?<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/fancybox.css?<?php echo time(); ?>" />
+    <script src="assets/js/048de552e6.js?<?php echo time(); ?>" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js?<?php echo time(); ?>"></script>
+    <script src="assets/js/main.js?<?php echo time(); ?>"></script>
 </head>
 
 <body>

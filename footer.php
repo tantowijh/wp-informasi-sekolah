@@ -45,8 +45,8 @@
         </footer>
     </div>
 </div>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/fancybox.umd.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js?<?php echo time(); ?>"></script>
+<script src="assets/js/fancybox.umd.js?<?php echo time(); ?>"></script>
 </body>
 
 </html>
