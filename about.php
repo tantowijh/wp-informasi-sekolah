@@ -34,7 +34,7 @@ require('header.php');
         </div>
     </div>
 
-    <div class="container pb-4 mb-4">
+    <div id="contact-section" class="container pb-4 mb-4">
         <div class="col-md-12 my-2">
             <h1 class="pb-2 text-uppercase border-bottom">Contact ZulEdu</h1>
             <p>

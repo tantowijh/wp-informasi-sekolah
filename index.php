@@ -100,7 +100,7 @@ require('header.php');
                     <a href="admission.php">
                         <button class="zuledu-cta-btn" type="button">Join Our School</button>
                     </a>
-                    <a href="contact.php">
+                    <a href="about.php#contact-section">
                         <button class="zuledu-cta-btn" type="button">Contact Us</button>
                     </a>
                 </div>
