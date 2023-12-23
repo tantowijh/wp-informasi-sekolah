@@ -19,7 +19,7 @@ require('header.php');
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden shadow-lg">
                             <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/academics/elementary-school.jpg');">
-                                <i class="fa-solid fa-language fa-4x"></i>
+                                <i class="fa-solid fa-book fa-4x"></i>
                                 <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                     Elementary School
                                 </h3>
@@ -30,7 +30,7 @@ require('header.php');
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden shadow-lg">
                             <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/academics/middle-school.jpg');">
-                                <i class="fa-solid fa-square-root-variable fa-4x"></i>
+                                <i class="fa-solid fa-graduation-cap fa-4x"></i>
                                 <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                     Middle School
                                 </h3>
@@ -41,7 +41,7 @@ require('header.php');
                     <div class="col">
                         <div class="card card-cover h-100 overflow-hidden shadow-lg">
                             <div class="d-flex flex-column h-100 p-5 pb-3 zuledu-secondary-color text-shadow-1" style="background-image: url('assets/img/academics/high-school.jpg');">
-                                <i class="fa-solid fa-flask fa-4x"></i>
+                                <i class="fa-solid fa-school fa-4x"></i>
                                 <h3 class="mt-3 mb-4 display-6 lh-1 fw-bold">
                                     High School
                                 </h3>
