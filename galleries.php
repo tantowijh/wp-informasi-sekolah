@@ -14,13 +14,13 @@ include('breadcrumb.php');
             </div>
             <div class="col-md-12 mb-5 gallery-container">
                 <?php
-                // Directory path to the folder containing images
+                // Path gambar di folder
                 $image_folder = 'assets/img/galleries';
 
-                // Get all image files from the folder
+                // Ambil semua gambar di folder
                 $images = glob($image_folder . '/*.{jpg,jpeg,png,gif,webp}', GLOB_BRACE);
 
-                // Iterate through the images and create gallery items
+                // Tampilkan semua gambar
                 foreach ($images as $index => $image) {
                     echo '<div class="gallery-item">';
                     echo '<a data-fancybox="gallery" data-src="' . $image . '">';

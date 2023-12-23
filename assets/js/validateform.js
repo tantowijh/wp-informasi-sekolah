@@ -5,11 +5,11 @@ var inputCityAlert = document.getElementById('cityError');
 inputCityAlert.style.display = 'none';
 
 function submitForm() {
-    // Get the selected value from the inputState dropdown
+    // Mengambil value dari inputState dan inputCity
     var inputStateValue = document.getElementById('inputState').value;
     var inputCityValue = document.getElementById('inputCity').value;
 
-    // Check if the selected value is the default/placeholder value
+    // Mengecek apakah inputStateValue dan inputCityValue masih default
     if (inputStateValue === "Choose...") {
         inputStateAlert.style.display = 'block';
         return false;

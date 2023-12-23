@@ -1,5 +1,7 @@
 <?php
 $pageTitle = ucfirst(pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME));
+
+// Memunculkan class active di link sesuai halaman
 function isActiveLink($pageName)
 {
     if (basename($_SERVER['PHP_SELF']) === $pageName) {
@@ -8,6 +10,8 @@ function isActiveLink($pageName)
         return '';
     }
 }
+
+// Memunculkan aria-current="page" di link sesuai halaman
 function isCurrentPage($pageName)
 {
     if (basename($_SERVER['PHP_SELF']) === $pageName) {
@@ -16,6 +20,8 @@ function isCurrentPage($pageName)
         return '';
     }
 }
+
+// Memunculkan title di tab sesuai halaman
 function subTitle()
 {
     if (basename($_SERVER['PHP_SELF']) === "index.php") {
@@ -32,6 +38,8 @@ function subTitle()
         return 'ZulEdu';
     }
 }
+
+// Memunculkan link sesuai halaman di navbar
 function navLink($pageName, string $link = '')
 {
     if (basename($_SERVER['PHP_SELF']) === $pageName) {
@@ -42,10 +50,14 @@ function navLink($pageName, string $link = '')
         return $pageName;
     }
 }
+
+// Memunculkan link sesuai halaman di header
 function headerItem($pageName, $itemName) {
     return '<a class="nav-link ' . isActiveLink($pageName) . '" ' 
     . isCurrentPage($pageName) . ' href="' . navLink($pageName) . '">' . $itemName . '</a>';
 }
+
+// Memunculkan link sesuai halaman di footer
 function footerItem($pageName, $itemName) {
     return '<li class="nav-item"><a href="' . navLink($pageName) 
     . '" class="nav-link px-2 text-body-secondary ' . isActiveLink($pageName) 
@@ -54,6 +66,7 @@ function footerItem($pageName, $itemName) {
 ?>
 
 <?php
+// Data provinsi
 $provinsi_per_region = array(
     'Sumatra' => array(
         'Aceh', 'Sumatera Utara', 'Sumatera Barat', 'Riau', 'Kepulauan Riau', 'Jambi', 'Sumatera Selatan', 'Bangka Belitung', 'Bengkulu', 'Lampung'

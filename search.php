@@ -45,7 +45,7 @@ include('breadcrumb.php');
         if (!empty($searchTerm)) {
 
             foreach ($data as $title => $info) {
-                // Check if the search term is present in either the title or the description
+                // Mengecek apakah ada kata yang sama dengan search term
                 if (stripos($title, $searchTerm) !== false || stripos($info['description'], $searchTerm) !== false) {
                     $results[$title] = $info;
                 }

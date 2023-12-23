@@ -137,7 +137,9 @@ h3 {
     font-size: 1rem;
 }
 
-/* Header Section */
+/* ---------------------------------------
+    Header Section
+----------------------------------------- */
 
 .zul-nav-scroll {
     top: -60px;
@@ -224,7 +226,10 @@ header nav.nav-color {
     background-color: transparent !important;
 }
 
-/* Hero Section */
+/* ---------------------------------------
+    Hero Section
+----------------------------------------- */
+
 .hero h1,
 .hero p {
     position: relative;
@@ -276,7 +281,10 @@ ol {
     z-index: 1;
 }
 
-/* Footer Section */
+/* ---------------------------------------
+    Footer Section
+----------------------------------------- */
+
 .zuledu-footer-container {
     position: absolute;
     width: 100%;
@@ -373,8 +381,9 @@ footer a svg {
 }
 
 
-/* Above Footer 
---------------------------------- */
+/* ---------------------------------------
+    Above Footer Section
+----------------------------------------- */
 
 .footer-list p {
     font-size: 1.2rem;
@@ -439,10 +448,6 @@ footer a svg {
     background: rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
 /*---------------------------------------
   CUSTOM LIST               
 -----------------------------------------*/
@@ -489,7 +494,7 @@ i.custom-text-box-icon {
 }
 
 /*---------------------------------------
-  SECTION               
+  ZulEdu Section Area
 -----------------------------------------*/
 .section-padding {
     padding-top: 100px;
@@ -613,7 +618,7 @@ table.registered-details {
 
 
 /* ---------------------------------------
-    Gallery
+    ZulEdu Gallery
 ----------------------------------------- */
 
 .gallery-container {

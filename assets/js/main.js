@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if (window.location.pathname.indexOf("admission.php") !== -1) {
 
-            // and values are arrays of cities
+            // Data kota
             var citiesData = {
                 'Aceh': ['Banda Aceh', 'Sabang', 'Langsa'],
                 'Sumatera Utara': ['Medan', 'Binjai', 'Pematangsiantar'],
@@ -54,14 +54,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Papua': ['Jayapura', 'Biak', 'Merauke']
             };
 
-            // Event listener for State dropdown change
+            // Mengisi opsi provinsi
             $('#inputState').on('change', function () {
                 var selectedProvince = $(this).val();
 
-                // Clear the existing options in the City dropdown
+                // Mengosongkan kota ketika provinsi berubah
                 $('#inputCity').empty().append('<option selected>Choose...</option>');
 
-                // If a valid province is selected, populate the City dropdown with corresponding cities
+                // Validasi provinsi dan memberikan opsi kota
                 if (selectedProvince in citiesData) {
                     citiesData[selectedProvince].forEach(function (city) {
                         $('#inputCity').append('<option value="' + city + '">' + city + '</option>');
@@ -89,6 +89,6 @@ function fakeEmail() {
 
 $(document).ready(function () {
     Fancybox.bind('[data-fancybox]', {
-        // Custom options
+        // Next update aja lah
     });
 });
