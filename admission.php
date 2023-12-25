@@ -19,7 +19,7 @@ require('header.php');
                 <form id="custom-message" class="row g-3 pt-5" action="registered.php" onsubmit="return submitForm()" method="POST">
                     <h2>Registration: </h2>
                     <div class="col-md-6">
-                        <label class="form-label">First name</label>
+                        <label class="form-label zuledu-wajib-tag">First name</label>
                         <input name="fname" type="text" class="form-control" placeholder="First name" aria-label="First name" required 
                         oninvalid="validateInput(this, 'Sorry, ZulEdu needs your first name.')" oninput="clearCustomValidity(this)">
                     </div>
@@ -28,12 +28,12 @@ require('header.php');
                         <input name="lname" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
                     <div class="col-12">
-                        <label class="form-label">Email</label>
+                        <label class="form-label zuledu-wajib-tag">Email</label>
                         <input name="email" type="email" class="form-control" id="inputEmail4" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
                         placeholder="thowiestudio@gmail.com" oninvalid="validateInput(this, 'Sorry, ZulEdu needs your email.')" oninput="clearCustomValidity(this)"> 
                     </div>
                     <div class="col-12">
-                        <label class="form-label">Address</label>
+                        <label class="form-label zuledu-wajib-tag">Address</label>
                         <input name="address" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required
                         oninvalid="validateInput(this, 'Sorry, ZulEdu needs your address.')" oninput="clearCustomValidity(this)">
                     </div>
@@ -42,7 +42,7 @@ require('header.php');
                         <input name="second-address" type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div>
                     <div class="col-md-4">
-                        <label class="form-label">State</label>
+                        <label class="form-label zuledu-wajib-tag">State</label>
                         <select name="state" id="inputState" class="form-select" required onchange="handleStateChange()">
                             <option selected>Choose...</option>
                             <?php
@@ -58,14 +58,14 @@ require('header.php');
                         <small id="stateError" class="form-text text-danger">Please select a state.</small>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">City</label>
+                        <label class="form-label zuledu-wajib-tag">City</label>
                         <select name="city" id="inputCity" class="form-select" required onchange="handleCityChange()">
                             <option selected>Choose...</option>
                         </select>
                         <small id="cityError" class="form-text text-danger">Please select a city.</small>
                     </div>
                     <div class="col-md-2">
-                        <label class="form-label">Zip Code</label>
+                        <label class="form-label zuledu-wajib-tag">Zip Code</label>
                         <input name="zip-code" type="text" class="form-control" id="inputZip" pattern="\d{5}" required placeholder="5 digits"
                         oninvalid="validateInput(this, 'Sorry, ZulEdu needs your zip code.')" oninput="clearCustomValidity(this)">
                     </div>

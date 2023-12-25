@@ -571,6 +571,11 @@ label.error {
     Registered Details
 ----------------------------------------- */
 
+.zuledu-wajib-tag::after {
+    content: "*";
+    color: red;
+}
+
 table.registered-details {
     width: 100%;
     border-collapse: collapse;

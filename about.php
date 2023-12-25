@@ -54,22 +54,22 @@ require('header.php');
                     <h2 class="fw-bold">Contact Us</h2>
                     <form onsubmit="fakeEmail(); event.preventDefault();">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
+                            <label for="name" class="form-label zuledu-wajib-tag">Name</label>
                             <input type="text" class="form-control" id="name" name="name" required oninvalid="validateInput(this, 'Sorry, ZulEdu needs your name.')" oninput="clearCustomValidity(this)">
                         </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label zuledu-wajib-tag">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" oninvalid="validateInput(this, 'Sorry, ZulEdu needs your email.')" oninput="clearCustomValidity(this)">
                         </div>
 
                         <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
+                            <label for="subject" class="form-label zuledu-wajib-tag">Subject</label>
                             <input type="text" class="form-control" id="subject" name="subject" required oninvalid="validateInput(this, 'Sorry, ZulEdu needs the subject.')" oninput="clearCustomValidity(this)">
                         </div>
 
                         <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
+                            <label for="message" class="form-label zuledu-wajib-tag">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="4" required oninvalid="validateInput(this, 'Sorry, ZulEdu needs your message, paling penting ini :) .')" oninput="clearCustomValidity(this)"></textarea>
                         </div>
 

@@ -20,10 +20,10 @@ require('header.php');
             $zip = isset($_POST['zip-code']) ? $_POST['zip-code'] : '';
             ?>
             <div class="container-fluid py-5">
-                <?php if ($fname) { ?>
+                <?php if ($fname) : ?>
                     <h2 class="fw-bold">Congratulations!</h2>
                     <p class="col lead-zuledu">
-                        Your registration has been successful! We welcome you, aka Sir/Madam, to our beloved, extraordinary school.
+                        Your registration has been successful! We welcome you, aka Sir/Madam <?= $fname; ?>, to our beloved, extraordinary school.
                     </p>
 
                     <h5>Your Details: </h5>
@@ -43,10 +43,10 @@ require('header.php');
                             <td><?php echo $email; ?></td>
                             <td>
                                 <?php echo $address; ?>
-                                <?php 
-                                    if ($second_address) {
-                                        echo "($second_address)";
-                                    }
+                                <?php
+                                if ($second_address) {
+                                    echo "($second_address)";
+                                }
                                 ?>
                             </td>
                             <td><?php echo $state; ?></td>
@@ -54,15 +54,15 @@ require('header.php');
                             <td><?php echo $zip; ?></td>
                         </tr>
                     </table>
-                <?php } else { ?>
+                <?php else : ?>
                     <h2 class="fw-bold">Sorry!</h2>
                     <p class="col lead-zuledu">
                         Your registration has failed! Please try again.
                     </p>
-                <?php } ?>
+                <?php endif; ?>
                 <div class="back-to-home">
                     <a href="index.php" class="btn btn-primary">Back to Home</a>
-                </div>            
+                </div>
             </div>
         </div>
     </div>
