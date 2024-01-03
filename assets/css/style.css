@@ -606,9 +606,9 @@ table.registered-details {
 
 .back-to-home a,
 .btn.btn-register {
-    background-color: red;
+    background-color: var(--dark-moss-green);
     border-color: var(--dark-moss-green);
-    color: white
+    color: var(--cornsilk);
 }
 
 .back-to-home a:hover,
