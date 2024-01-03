@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Lampung': ['Bandar Lampung', 'Metro', 'Liwa'],
                 'DKI Jakarta': ['Jakarta Pusat', 'Jakarta Barat', 'Jakarta Selatan'],
                 'Jawa Barat': ['Bandung', 'Bogor', 'Cirebon'],
-                'Banten': ['Serang', 'Tangerang', 'Cilegon'],
+                'Banten': ['Serang', 'Tangerang', 'Cilegon', 'Tangerang Selatan'],
                 'Jawa Tengah': ['Semarang', 'Surakarta', 'Tegal'],
                 'DI Yogyakarta': ['Yogyakarta', 'Sleman', 'Bantul'],
                 'Jawa Timur': ['Surabaya', 'Malang', 'Probolinggo'],
