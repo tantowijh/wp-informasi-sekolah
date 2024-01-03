@@ -28,6 +28,11 @@ require('header.php');
                         <input name="lname" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
                     <div class="col-12">
+                        <label class="form-label zuledu-wajib-tag">Phone</label>
+                        <input name="phone" type="text" class="form-control" id="" required
+                        placeholder="0888888888" oninvalid="validateInput(this, 'Sorry, ZulEdu needs your phone number.')" oninput="clearCustomValidity(this)"> 
+                    </div>
+                    <div class="col-12">
                         <label class="form-label zuledu-wajib-tag">Email</label>
                         <input name="email" type="email" class="form-control" id="inputEmail4" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required
                         placeholder="thowiestudio@gmail.com" oninvalid="validateInput(this, 'Sorry, ZulEdu needs your email.')" oninput="clearCustomValidity(this)"> 
