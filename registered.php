@@ -12,6 +12,7 @@ require('header.php');
             <?php
             $fname = isset($_POST['fname']) ? $_POST['fname'] : '';
             $lname = isset($_POST['lname']) ? $_POST['lname'] : '';
+            $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
             $email = isset($_POST['email']) ? $_POST['email'] : '';
             $address = isset($_POST['address']) ? $_POST['address'] : '';
             $second_address = isset($_POST['second-address']) ? $_POST['second-address'] : '';
@@ -31,6 +32,7 @@ require('header.php');
                         <tr>
                             <th>First Name</th>
                             <th>Last Name</th>
+                            <th>Phone</th>
                             <th>Email</th>
                             <th>Address</th>
                             <th>State</th>
@@ -40,6 +42,7 @@ require('header.php');
                         <tr>
                             <td><?php echo $fname; ?></td>
                             <td><?php echo $lname; ?></td>
+                            <td><?php echo $phone; ?></td>
                             <td><?php echo $email; ?></td>
                             <td>
                                 <?php echo $address; ?>
