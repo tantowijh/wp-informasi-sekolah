@@ -52,7 +52,7 @@ require('header.php');
             <div class="col-md-4 mb-2">
                 <div class="h-100 p-5 shadow contact-container">
                     <h2 class="fw-bold">Contact Us</h2>
-                    <form onsubmit="fakeEmail(); event.preventDefault();">
+                    <form id="reset_ygy" onsubmit="fakeEmail(); event.preventDefault(); resetForm();">
                         <div class="mb-3">
                             <label for="name" class="form-label zuledu-wajib-tag">Name</label>
                             <input type="text" class="form-control" id="name" name="name" required oninvalid="validateInput(this, 'Sorry, ZulEdu needs your name.')" oninput="clearCustomValidity(this)">
